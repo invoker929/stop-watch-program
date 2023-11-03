@@ -14,16 +14,23 @@ body {
   margin: 2rem auto;
   padding: 1.5rem 1rem;
   text-align: center;
-  max-width: 450px;
+  max-width: 500px;
   background: #08030a;
   border-radius: 3rem;
 }
 
 .time-display {
-  font-size: 6rem;
   color: #13dd78;
   margin-bottom: 1rem;
   user-select: none;
+}
+
+.time-display .not-milliseconds {
+  font-size: 6rem;
+}
+
+.time-display .milliseconds {
+  font-size: 1rem;
 }
 
 .time-btn {
@@ -34,4 +41,8 @@ body {
   border-radius: 1rem;
   border: 3px solid;
   cursor: pointer;
+}
+
+.time-btn:nth-child(odd) {
+  margin: 0 0.5rem;
 }
